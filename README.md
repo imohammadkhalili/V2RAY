@@ -5,5 +5,3 @@
 
 Sub link:
 https://raw.githubusercontent.com/imohammadkhalili/V2RAY/main/Mkhalili
-
-V*v2ray
