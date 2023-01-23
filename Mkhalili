@@ -15,7 +15,7 @@ ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@38.91.107.37:7001#%F0%9F%8C%90%201202%
 ss://YWVzLTI1Ni1nY206ZzVNZUQ2RnQzQ1dsSklk@38.91.107.37:5003#%F0%9F%8C%90%201201%20FREENET
 ss://YWVzLTI1Ni1nY206cEtFVzhKUEJ5VFZUTHRN@38.91.107.37:4444#%F0%9F%8C%90%201203%20FREENET
 trojan://shefelnak@88.150.137.177:443/?type=tcp&security=tls&sni=content-provider4.cdn-delivery.akamaicd.com&allowInsecure=1#%F0%9F%8C%90%201310%20FREENET
-trojan://l97ib1eedX@95.85.76.155:38371/?type=tcp&security=tls&sni=tr2.digisport.shop&allowInsecure=1#%F0%9F%8C%90%201310%20FREENET
+trojan://l97ib1eedX@95.85.76.155:38371/?type=tcp&security=tls&sni=tr2.digisport.shop&allowInsecure=1#%F0%9F%8C%90%201311%20FREENET
 ss://YWVzLTI1Ni1jZmI6S25KR2FkM0ZxVHZqcWJhWA@213.183.59.218:9014#%F0%9F%8C%90%201206%20FREENET
 trojan://Sp3eDVp@185.212.200.74:443/?type=tcp&security=tls&allowInsecure=1#%F0%9F%8C%90%201304%20FREENET
 vmess://eyJhZGQiOiI3OS4xMzMuNDEuMTc1IiwiYWlkIjoiMCIsImFscG4iOiIiLCJob3N0IjoiIiwiaWQiOiI5YjZmN2RhOC02NjM4LTQxNGMtZjVjMS03OGQyNDVlOWFlMzEiLCJuZXQiOiJ3cyIsInBhdGgiOiIvIiwicG9ydCI6IjQ0MyIsInBzIjoi8J+MkCAxNDAyIEZSRUVORVQiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOiIyIn0=
@@ -33,7 +33,7 @@ vmess://eyJhZGQiOiIxNDEuMTEuMTg3LjMwIiwiYWlkIjoiMCIsImFscG4iOiIiLCJob3N0IjoiMTQx
 vmess://eyJhZGQiOiIxMDQuMjQ4LjgwLjM1IiwiYWlkIjoiMCIsImFscG4iOiIiLCJob3N0IjoiIiwiaWQiOiJiN2QzZjRjNy03ZjZkLTQyMzgtODc2MC01OGMzZGZhZDUzZTEiLCJuZXQiOiJ3cyIsInBhdGgiOiIvZGV2IiwicG9ydCI6IjMzMDA4IiwicHMiOiLwn4yQIDE0MDUgRlJFRU5FVCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==
 vmess://eyJhZGQiOiIyMTIuOTAuMTAzLjE3NyIsImFpZCI6IjAiLCJhbHBuIjoiIiwiaG9zdCI6IiIsImlkIjoiMDQ1MDI1OGItNDY4Zi00ODcyLWUwYTktYzE0NjNmMzk3ZjcyIiwibmV0Ijoid3MiLCJwYXRoIjoiLyIsInBvcnQiOiI0MjMyMiIsInBzIjoi8J+MkCAxNDA2IEZSRUVORVQiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOiIyIn0=
 trojan://shefelnak@185.16.206.212:443/?type=tcp&security=tls&allowInsecure=1#%F0%9F%8C%90%201306%20FREENET
-trojan://fEDTdp8Sy1@95.85.76.136:56810/?type=tcp&security=tls&sni=tr1.digisport.shop&allowInsecure=1#%F0%9F%8C%90%201311%20FREENET
+trojan://fEDTdp8Sy1@95.85.76.136:56810/?type=tcp&security=tls&sni=tr1.digisport.shop&allowInsecure=1#%F0%9F%8C%90%201312%20FREENET
 trojan://xxoo@138.124.183.222:443/?type=tcp&security=tls&sni=138.124.183.222&allowInsecure=1#%F0%9F%8C%90%201307%20FREENET
 trojan://2959e4f7-7589-4a40-9b96-1be750ac7845@51.83.186.142:80/?type=tcp&security=tls&sni=pl1.trojanvh.xyz&allowInsecure=1#%F0%9F%8C%90%201308%20FREENET
 trojan://a2c8194b-fcfd-4c39-a6bd-31ea9f4ea671@5.135.235.160:443/?type=tcp&security=tls&sni=upload.soft98.download&allowInsecure=1#%F0%9F%8C%90%201309%20FREENET
