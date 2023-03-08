@@ -1,10 +1,10 @@
-trojan://Sp3eDVp@185.212.200.74:443/?type=tcp&security=tls&allowInsecure=1#06%20WIFI%20NL%20%F0%9F%87%B3%F0%9F%87%B1
-trojan://e0d44ae7-cb7d-4acc-a8c0-9861a6f5eaad@51.91.11.29:80/?type=tcp&security=tls&sni=fr1.trojanvh.xyz&allowInsecure=1#07%20WIFI%20FR%20%F0%9F%87%AB%F0%9F%87%B7
-trojan://cf4295378e209e70d12c5bdd017144dfd1c772d3@3.249.129.98:8443/?type=tcp&security=tls&allowInsecure=1#08%20WIFI%20IE%20%F0%9F%87%AE%F0%9F%87%AA
+trojan://e0d44ae7-cb7d-4acc-a8c0-9861a6f5eaad@51.91.11.29:80/?type=tcp&security=tls&sni=fr1.trojanvh.xyz&allowInsecure=1#06%20WIFI%20FR%20%F0%9F%87%AB%F0%9F%87%B7
+trojan://cf4295378e209e70d12c5bdd017144dfd1c772d3@3.249.129.98:8443/?type=tcp&security=tls&allowInsecure=1#07%20WIFI%20IE%20%F0%9F%87%AE%F0%9F%87%AA
+trojan://af6a3685-c423-4579-bfea-784c453d5e23@146.59.3.14:443/?type=tcp&security=tls&allowInsecure=1#08%20WIFI%20PL%20%F0%9F%87%B5%F0%9F%87%B1
 ss://YWVzLTI1Ni1jZmI6Yndoc2tyc2tyMDY@65.49.223.117:239#04%20MCI%20US%20%F0%9F%87%BA%F0%9F%87%B8
 ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw@193.182.144.183:989#03%20MCI%20IL%20%F0%9F%87%AE%F0%9F%87%B1
 ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw@37.252.9.76:989#02%20MCI%20SE%20%F0%9F%87%B8%F0%9F%87%AA
 ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw@190.120.231.45:989#05%20MCI%20CO%20%F0%9F%87%A8%F0%9F%87%B4
 ss://YWVzLTI1Ni1jZmI6VlA4WlB4UXBKdFpSQ2pmWg@213.183.53.222:9080#01%20MCI%20RU%20%F0%9F%87%B7%F0%9F%87%BA
-trojan://af6a3685-c423-4579-bfea-784c453d5e23@146.59.3.14:443/?type=tcp&security=tls&allowInsecure=1#09%20WIFI%20NO%20%F0%9F%87%B3%F0%9F%87%B4
+trojan://Sp3eDVp@185.212.200.74:443/?type=tcp&security=tls&allowInsecure=1#09%20WIFI%20NL%20%F0%9F%87%B3%F0%9F%87%B1
 trojan://shefelnak@185.16.206.211:443/?type=tcp&security=tls&sni=%24content-provider21.cdn-delivery.akamaicd.com&allowInsecure=1#10%20WIFI%20UK%20%F0%9F%87%AC%F0%9F%87%A7
