@@ -64,3 +64,12 @@ vless://6352d22b-6586-4aab-b4b5-bcbc936d2177@104.31.16.65:443/?type=grpc&encrypt
 vless://ff32d79e-ad47-4532-ad89-f1615004cfc7@116.203.191.170:80/?type=tcp&encryption=none#%F0%9F%8C%90%20Server%2013
 vless://15d5a28c-9a79-407f-b641-98fe7c4f1801@172.86.66.221:443/?type=grpc&encryption=none&serviceName=iP_CF&sni=www.speedtest.net&fp=firefox&security=reality&pbk=xaRk69iA2TUxtBZXO7rw-GtXRMaa2SX8nEle4CFwsko&sid=#%F0%9F%8C%90%20Server%2005
 trojan://telegram-id-directvpn@15.222.15.149:22222/?type=tcp&security=tls&sni=trj.rollingnext.co.uk&alpn=http%2F1.1#%F0%9F%8C%90%20Server%2009
+vless://bbcdef15-d998-4000-dd8c-60ef69cc65be@3.79.10.105:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=aws.amazon.com&fp=chrome&security=reality&pbk=j1-ExEsmPg0HrZZxduIKBOIoZ4brw7LKzo40afZyLR8&sid=#%F0%9F%8C%90%20Server%2067
+vless://9cefc420-ff1f-4656-8472-62e6d5e00fe1@104.31.16.6:2096/?type=grpc&encryption=none&serviceName=%40VPNCUSTOMIZE&security=tls&sni=yiy.TrV2ray.cfd#%F0%9F%8C%90%20Server%2068
+vless://513f9df7-c30d-418b-aa5c-d7cc8cab452d@104.31.16.35:2086/?type=ws&encryption=none&host=1.chalesh.cfd&path=%2F%40v2rayng_vpnn#%F0%9F%8C%90%20Server%2069
+trojan://telegram-id-privatevpns@34.242.178.46:22222/?type=tcp&security=tls&sni=trj.rollingnext.co.uk&alpn=http%2F1.1#%F0%9F%8C%90%20Server%2070
+trojan://telegram-id-directvpn@18.117.154.239:22222/?type=tcp&security=tls&sni=trj.rollingnext.co.uk&alpn=http%2F1.1#%F0%9F%8C%90%20Server%2071
+trojan://telegram-id-directvpn@35.87.1.219:22222/?type=tcp&security=tls&sni=trj.rollingnext.co.uk&alpn=http%2F1.1#%F0%9F%8C%90%20Server%2072
+trojan://telegram-id-directvpn@15.156.203.183:22222/?type=tcp&security=tls&sni=trj.rollingnext.co.uk&alpn=http%2F1.1#%F0%9F%8C%90%20Server%2073
+trojan://telegram-id-directvpn@54.149.6.69:22222/?type=tcp&security=tls&sni=trj.rollingnext.co.uk&alpn=http%2F1.1#%F0%9F%8C%90%20Server%2074
+trojan://telegram-id-directvpn@44.203.168.113:22222/?type=tcp&security=tls&sni=trj.rollingnext.co.uk&alpn=http%2F1.1#%F0%9F%8C%90%20Server%2075
