@@ -98,10 +98,10 @@ proxies:
   - {"name":"🌐 Server 31","type":"vmess","server":"156.249.18.38","port":48222,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🌐 Server 04","type":"ss","server":"34.217.75.169","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
 proxy-groups:
-  - name: 🚀 节点选择
+  - name:🚀
     type: select
     proxies:
-      - ♻️ 自动选择
+      - ♻️
       - DIRECT
       - 🌐 Server 02
       - 🌐 Server 08
