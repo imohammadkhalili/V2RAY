@@ -82,3 +82,10 @@ tuic://628e821d-5151-48d6-8af3-e89cd74e6f4d:628e821d-5151-48d6-8af3-e89cd74e6f4d
 vless://a87387cc-7a9f-4e8c-c653-d422425897b0@95.217.243.4:443/?type=tcp&encryption=none&sni=kh%C3%B8m%C3%ABi%C3%B1%C3%AD.%C3%A7om&fp=safari&security=reality&pbk=QcDX3RiYqqDQE7Pfnt_MzB2e7D4RcaVhb8sgGhZ5Oho&sid=49a0
 vless://ab97e6ee-3e00-4612-bb63-83cf5e354383@78.46.240.115:443/?type=grpc&encryption=none&serviceName=%40TLS_v2ray&sni=greenpepper.ir&fp=firefox&security=reality&pbk=GTVnubp-q8gRkQt8FynkMWNgyP-PAOEZgCFtCLfGYxI&sid=d60895c1
 vmess://eyJhZGQiOiIxMDQuMTkuMjUwLjIwIiwiYWlkIjoiMCIsImFscG4iOiJodHRwLzEuMSIsImZwIjoiY2hyb21lIiwiaG9zdCI6IlRyZWUuQmxhbmt1Lk1lIiwiaWQiOiJjNzY3NjJmNy1hZTNkLTRmZDgtOThiMi05YzNmOTc2N2M4YWUiLCJuZXQiOiJ3cyIsInBhdGgiOiIvd3NzNDk0MDYiLCJwb3J0IjoiNDQzIiwicHMiOiIiLCJzY3kiOiJhdXRvIiwic25pIjoiUm9ja3AuQmxhbmt1Lk1lIiwidGxzIjoidGxzIiwidHlwZSI6IiIsInYiOiIyIn0=
+hysteria://167.160.90.251:48089/?insecure=1&auth=dongtaiwang.com&upmbps=11&downmbps=55&alpn=h3
+tuic://ed6a538a-6e66-4f21-a769-4b389bb2f3ab:dongtaiwang@108.181.22.155:12255/?congestion_control=bbr&udp_relay_mode=native&alpn=h3
+hysteria://1.162.135.166:11223/?insecure=1&peer=www.dtku46.xyz&auth=mqoE9qSoyMFa&upmbps=11&downmbps=55&alpn=h3
+hysteria://62.204.54.81:42691/?insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=5&downmbps=10&alpn=h3
+hysteria://109.104.152.180:40522/?insecure=1&peer=www.microsoft.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3
+hy2://dongtaiwang.com@1.162.135.166:62580/?insecure=1&sni=www.bing.com
+hy2://dongtaiwang.com@108.181.22.155:15565/?insecure=1&sni=www.bing.com
