@@ -1,11 +1,11 @@
 hy2://dongtaiwang.com@51.159.77.198:29277/?insecure=1&sni=www.bing.com
 vless://b9ad895b-12ac-40fc-a5ac-a5b2a1285001@104.21.28.62:443/?type=ws&encryption=none&host=3k.pureboy.eu.org&path=%2F%3Fed%3D2048&security=tls&sni=3k.pureboy.eu.org
 vless://64f4faca-8387-4511-adab-45300a332d27@104.17.254.239:8443/?type=grpc&encryption=none&security=tls&sni=id067.v2net.work
-vless://33f11af2-cf46-42e1-aad0-c7d85b5fe992@turk1.az-owner.2222.workers.dev:443/?type=grpc&encryption=none&serviceName=e59ef42e&security=tls&sni=cdn29.cdn2cdn.com&alpn=h3%2Ch2&fp=chrome
+vless://33f11af2-cf46-42e1-aad0-c7d85b5fe992@188.114.99.0:443/?type=grpc&encryption=none&serviceName=e59ef42e&security=tls&sni=cdn29.cdn2cdn.com&alpn=h3%2Ch2&fp=chrome
 vless://95878aa5-a695-4b88-b502-55c05c998cf2@104.19.45.11:443/?type=ws&encryption=none&host=lg1.dtku41.xyz&path=%2Fugrlws&security=tls&sni=lg1.dtku41.xyz
 vless://bda4be04-48bf-4df1-aaf2-6d42522eab6b@188.114.98.0:80/?type=ws&encryption=none&host=ehda.sajaditsme.com&path=%2F%3Fed%3D2048
 vless://dbff34ab-eb96-441d-9f07-30f0a7776037@49.13.69.46:56078/?type=tcp&encryption=none&sni=canva.com&fp=chrome&security=reality&pbk=SUCJ94wKPUdfkBJw8VnANql6kevueb6EyA71C3AfKFs&sid=bf44fc2c
-vless://cbe2245a-dc54-49f7-8658-e9013c64c849@all.deragv2ray.net:2083/?type=ws&encryption=none&host=allnet.deragv2ray.net&path=%2F&security=tls&sni=allnet.deragv2ray.net
+vless://cbe2245a-dc54-49f7-8658-e9013c64c849@190.93.247.155:2083/?type=ws&encryption=none&host=allnet.deragv2ray.net&path=%2F&security=tls&sni=allnet.deragv2ray.net
 vless://a25e8ff9-8650-4098-86af-b524e4ec72d8@5.75.236.28:443/?type=ws&encryption=none&host=admin2.pythonic-ai.com&path=%2FvYoLL0j3yXajA2rNVYyVkeSUkkM&security=tls&sni=admin2.pythonic-ai.com&fp=firefox
 vless://4a22a931-6eed-4755-81b7-07125b5824d4@94.130.151.241:37835/?encryption=none&host=fast.com&type=tcp&headerType=http
 vless://3e9910cf-26fb-4b8f-bc8e-5a1fd221b1da@104.18.203.232:80/?type=ws&encryption=none&host=ws2.gsmvx.com&path=%2Fgsmxserver
