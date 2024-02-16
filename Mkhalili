@@ -1,6 +1,6 @@
 hy2://dongtaiwang.com@51.159.77.198:29277/?insecure=1&sni=www.bing.com#MCI%20%7C%20FREENET%2001
-vless://b75b3034-36ab-4979-beae-3d02db1b11ec@104.18.16.149:443/?type=ws&encryption=none&host=always-online1.lp-airdrop.top&path=%2F%3Fed%3D2048&security=tls&sni=always-online1.lp-airdrop.top#MCI%20%7C%20FREENET%2002
-vless://b0138d55-a493-4dc3-9932-c6f0391707c1@172.64.111.9:443/?type=ws&encryption=none&host=edge.020770.xyz&path=%2Fvless%2Fb0138d55-a493-4dc3-9932-c6f0391707c1%3Fed%3D2048&security=tls&sni=edge.020770.xyz#MCI%20%7C%20FREENET%2003
+vless://b9ad895b-12ac-40fc-a5ac-a5b2a1285001@104.21.28.62:443/?type=ws&encryption=none&host=3k.pureboy.eu.org&path=%2F%3Fed%3D2048&security=tls&sni=3k.pureboy.eu.org#MCI%20%7C%20FREENET%2002
+vless://64f4faca-8387-4511-adab-45300a332d27@104.17.254.239:8443/?type=grpc&encryption=none&security=tls&sni=id067.v2net.work#MCI%20%7C%20FREENET%2003
 vless://33f11af2-cf46-42e1-aad0-c7d85b5fe992@turk1.az-owner.2222.workers.dev:443/?type=grpc&encryption=none&serviceName=e59ef42e&security=tls&sni=cdn29.cdn2cdn.com&alpn=h3%2Ch2&fp=chrome#MCI%20%7C%20FREENET%2004
 vless://95878aa5-a695-4b88-b502-55c05c998cf2@104.19.45.11:443/?type=ws&encryption=none&host=lg1.dtku41.xyz&path=%2Fugrlws&security=tls&sni=lg1.dtku41.xyz#MCI%20%7C%20FREENET%2005
 vless://bda4be04-48bf-4df1-aaf2-6d42522eab6b@188.114.98.0:80/?type=ws&encryption=none&host=ehda.sajaditsme.com&path=%2F%3Fed%3D2048#PGJ%20%7C%20FREENET%2001
