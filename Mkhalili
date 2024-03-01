@@ -1,5 +1,5 @@
 hy2://dongtaiwang.com@51.159.77.198:53967/?insecure=1&sni=www.bing.com#%F0%9F%91%BEserver01
-hy2://dongtaiwang.com@51.159.77.198:29277/?insecure=1&sni=www.bing.com#%F0%9F%91%BEserver02
+vless://594627e3-a602-42bd-bb76-01d21921541c@190.93.246.247:2053/?type=grpc&encryption=none&serviceName=%40v2rray1_ng&security=tls&sni=y.1lagvpn13.cfd#%F0%9F%91%BEserver02
 vless://51905fd3-29de-4b4e-b351-83542f1d5390@188.114.97.3:443/?type=ws&encryption=none&host=biA.ALlhub.LTD&path=%2F%3Fed%3D2048&security=tls&sni=Bia.alLhub.Ltd&alpn=h2%2Chttp%2F1.1&fp=random#%F0%9F%91%BEserver03
 vless://b75b3034-36ab-4979-beae-3d02db1b11ec@104.18.16.149:443/?type=ws&encryption=none&host=always-online1.lp-airdrop.top&path=%2F%3Fed%3D2048&security=tls&sni=always-online1.lp-airdrop.top#%F0%9F%91%BEserver04
 vless://b9ad895b-12ac-40fc-a5ac-a5b2a1285001@172.64.89.170:443/?type=ws&encryption=none&host=3k.pureboy.eu.org&path=%2F%3Fed%3D2048&security=tls&sni=3k.pureboy.eu.org#%F0%9F%91%BEserver05
@@ -52,4 +52,3 @@ vless://60813b9d-aa0e-4a5c-88b8-ed231058e82a@104.17.2.48:2083/?type=ws&encryptio
 vless://ec2e8ff7-e794-4ac4-9585-7ad28f188269@216.205.52.130:2053/?type=ws&encryption=none&host=btoche.pages.dev&path=%2F%3Fed%3D2048&security=tls&sni=ec2e8ffV2ray7-e794-4ac4-9585-7ad28f188269btoche.pages.dev#%F0%9F%A5%ADserver52
 vless://ec2e8ff7-e794-4ac4-9585-7ad28f188269@216.205.52.156:2053/?type=ws&encryption=none&host=btoche.pages.dev&path=%2F%3Fed%3D2048&security=tls&sni=ec2e8ffV2ray7-e794-4ac4-9585-7ad28f188269btoche.pages.dev#%F0%9F%A5%ADserver53
 vless://a2b657a5-1797-47b7-9cf3-3005e14fe26b@104.18.202.232:2096/?type=grpc&encryption=none&serviceName=Telegram%3A%40iranproxypro-Telegram%3A%40iranproxypro-Telegram%3A%40iranproxypro-Telegram%3A%40iranproxypro-Telegram%3A%40iranproxypro-Telegram%3A%40iranproxypro-Telegram%3A%40iranproxypro-Telegram%3A%40iranproxypro&security=tls&sni=iranproxy.hackers855.sbs#%F0%9F%A5%ADserver54
-vless://594627e3-a602-42bd-bb76-01d21921541c@190.93.246.247:2053/?type=grpc&encryption=none&serviceName=%40v2rray1_ng&security=tls&sni=y.1lagvpn13.cfd#%F0%9F%A5%ADserver55
