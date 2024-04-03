@@ -1,4 +1,4 @@
-warp://auto?ifp=1-5&ifps=20-150&ifpd=10-20
-warp://auto?ifp=10-20&ifps=20-50&ifpd=50-100
-warp://auto?ifp=1-5&ifps=20-150&ifps=50-200&ifps=20-40
-warp://162.159.195.104:1014/?ifp=5-10
+warp://auto?ifp=1-5&ifps=20-150&ifpd=10-20#NUMBER01
+warp://auto?ifp=10-20&ifps=20-50&ifpd=50-100#NUMBER02
+warp://auto?ifp=1-5&ifps=20-150&ifps=50-200&ifps=20-40#NUMBER03
+warp://162.159.195.104:1014/?ifp=5-10#NUMBER04
