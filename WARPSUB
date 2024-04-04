@@ -1,4 +1,5 @@
 warp://auto?ifp=1-5&ifps=20-150&ifpd=10-20
+warp://auto?ifp=1-5&ifps=20-50&ifpd=5-10
 warp://auto?ifp=5-10&ifps=50-100&ifpd=15-25
 warp://auto?ifp=10-20&ifps=20-50&ifpd=50-100
 warp://auto?ifp=1-5&ifps=20-150&ifpd=50-200
