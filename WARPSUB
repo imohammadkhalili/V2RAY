@@ -1,9 +1,5 @@
-warp://auto?ifp=1-5&ifps=20-150&ifpd=10-20#FREENET01
-
-warp://auto?ifp=1-5&ifps=40-100&ifpd=10-20#FREENET02
-
-warp://auto?ifp=1-10&ifps=40-150&ifpd=10-20#FREENET03
-
-warp://auto?ifp=1-10&ifps=40-150&ifpd=20-50#FREENET04
-
-warp://auto?ifp=1-10&ifps=40-150&ifpd=50-100#FREENET05
+warp://auto?ifp=1-5&ifps=20-150&ifpd=10-20
+warp://auto?ifp=1-5&ifps=40-100&ifpd=10-20
+warp://auto?ifp=1-10&ifps=40-150&ifpd=10-20
+warp://auto?ifp=1-10&ifps=40-150&ifpd=20-50
+warp://auto?ifp=1-10&ifps=40-150&ifpd=50-100
