@@ -1,3 +1,1 @@
-warp://auto?ifp=5-10#Warp_IR🇮🇷&&detour=warp://auto?ifp=5-10#Warp_DE🇩🇪
-warp://auto?ifp=20-40#Warp_IR🇮🇷&&detour=warp://auto?ifp=20-40#Warp_DE🇩🇪
-warp://auto?ifp=10-20#Warp_IR🇮🇷&&detour=warp://auto?ifp=10-20#Warp_DE🇩🇪
+warp://auto?ifp=10-20&ifps=40-100&ifpd=10-20&&detour=warp://auto?ifp=5-10#Warp_DE
