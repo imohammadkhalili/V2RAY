@@ -1,1 +1,2 @@
-warp://auto?ifp=10-20&ifps=40-100&ifpd=10-20&&detour=warp://auto?ifp=5-10#Warp_DE
+&&detourwarp://auto?ifp=10-20&ifps=40-100&ifpd=10-20#N1
+&&detour=warp://auto?ifp=5-10#N2
