@@ -1,5 +1,2 @@
-warp://auto#🇮🇷IR&&detour=warp://auto#🇩🇪DE01
-&&detour=warp://auto?ifp=20-30&ifps=30-100&ifpd=10-20#🇩🇪DE02
-&&detour=warp://auto?ifp=10-20&ifps=50-100&ifpd=10-20#🇩🇪DE03
-&&detour=warp://auto?ifp=1-10&ifps=10-30&ifpd=1-5#🇩🇪DE04
+warp://auto#🇮🇷IR&&detour=warp://auto#🇩🇪DE01&&detour=warp://auto?ifp=20-30&ifps=30-100&ifpd=10-20#🇩🇪DE02&&detour=warp://auto?ifp=10-20&ifps=50-100&ifpd=10-20#🇩🇪DE03&&detour=warp://auto?ifp=1-10&ifps=10-30&ifpd=1-5#🇩🇪DE04
 
