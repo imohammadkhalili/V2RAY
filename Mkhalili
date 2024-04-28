@@ -1,9 +1,10 @@
 tuic://a258065f-9502-4fe6-b3ed-cf7440e25150:dongtaiwang.com@74.63.233.74:33441/?congestion_control=bbr&udp_relay_mode=native&alpn=h3&disable_sni=1#%F0%9F%94%90FREENET01
-hy2://dongtaiwang.com@74.63.233.74:33445/?insecure=1&sni=www.bing.com#%F0%9F%94%90FREENET02
-hy2://dongtaiwang.com@51.159.77.153:33390/?insecure=1&sni=bing.com#%F0%9F%94%90FREENET03
-hy2://dongtaiwang.com@109.104.152.89:22441/?insecure=1&sni=www.bing.com#%F0%9F%94%90FREENET04
+hy2://dongtaiwang.com@109.104.152.89:22441/?insecure=1&sni=www.bing.com#%F0%9F%94%90FREENET02
+hy2://dongtaiwang.com@74.63.233.74:33445/?insecure=1&sni=www.bing.com#%F0%9F%94%90FREENET03
+hysteria://109.104.152.194:58510/?insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3#%F0%9F%94%90FREENET04
 hysteria://62.210.243.131:18702/?insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3#%F0%9F%94%90FREENET05
 hysteria://108.181.5.133:26022/?insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3#%F0%9F%94%90FREENET06
-hysteria://109.104.152.194:58510/?insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3#%F0%9F%94%90FREENET07
-vless://662ad6b6-b1df-4376-98bb-679aeb645352@85.133.237.132:57081/?type=tcp&encryption=none&security=tls&sni=rxopu1289.q.rxteam.ir&alpn=h2%2Chttp%2F1.1#%F0%9F%94%90FREENET08
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn@series-a2.samanehha.co:443#%F0%9F%94%90FREENET09
+vless://de70c2ab-3b16-44c2-8579-9b05fedc3b36@172.66.44.139:443/?type=ws&encryption=none&host=pardazeshvpn-tg3.pages.dev&path=%2F%3Fed%3D2048&security=tls&sni=pardazeshvpn-tg3.pages.dev&fp=randomized#%F0%9F%94%90FREENET07
+vless://de70c2ab-3b16-44c2-8579-9b05fedc3b36@pardazeshvpn-tg3.pages.dev:443/?type=ws&encryption=none&host=pardazeshvpn-tg3.pages.dev&path=%2F%3Fed%3D2048&security=tls&sni=pardazeshvpn-tg3.pages.dev&fp=randomized#%F0%9F%94%90FREENET08
+vless://e66bb4ed-ea00-4361-b445-3077c3d9936a@104.19.54.50:443/?type=ws&encryption=none&host=aRiAMEHr-3WP.pAges.DeV&path=%40VPNHTTPInjectorfree&security=tls&sni=ARIameHr-3WP.PAGeS.Dev&fp=randomized#%F0%9F%94%90FREENET09
+vless://c0b3afcf-b7a1-44c5-a552-bb1329304b7f@172.66.47.89:443/?type=ws&encryption=none&host=pardazeshvpn-tg5.pages.dev&path=%2F%3Fed%3D2048&security=tls&sni=pardazeshvpn-tg5.pages.dev&fp=randomized#%F0%9F%94%90FREENET10
