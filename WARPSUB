@@ -9,8 +9,12 @@
       {
         "tag": "dns-remote",
         "address": "udp://1.1.1.1",
-        "address_resolver": "dns-direct",
-        "detour": "select"
+        "address_resolver": "dns-direct"
+      },
+      {
+        "tag": "dns-trick-direct",
+        "address": "https://sky.rethinkdns.com/",
+        "detour": "direct-fragment"
       },
       {
         "tag": "dns-direct",
@@ -30,12 +34,12 @@
     ],
     "rules": [
       {
-        "domain": "engage.cloudflareclient.com",
-        "server": "dns-direct"
-      },
-      {
-        "domain_suffix": ".ir",
-        "geosite": "ir",
+        "domain": [
+          "wire.ircf.space",
+          "zula.ir",
+          "162.159.195.133.ipr.ircf.space",
+          "ip6.ircf.space"
+        ],
         "server": "dns-direct"
       },
       {
@@ -45,6 +49,20 @@
       }
     ],
     "final": "dns-remote",
+    "static_ips": {
+      "sky.rethinkdns.com": [
+        "188.114.96.3",
+        "188.114.97.3",
+        "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3",
+        "104.18.202.232",
+        "104.18.203.232",
+        "188.114.96.3",
+        "188.114.97.3",
+        "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3"
+      ]
+    },
     "independent_cache": true
   },
   "inbounds": [
@@ -56,6 +74,7 @@
       "auto_route": true,
       "strict_route": true,
       "endpoint_independent_nat": true,
+      "stack": "mixed",
       "sniff": true,
       "sniff_override_destination": true
     },
@@ -71,7 +90,7 @@
       "type": "direct",
       "tag": "dns-in",
       "listen": "0.0.0.0",
-      "listen_port": 6440,
+      "listen_port": 6450,
       "override_address": "1.1.1.1",
       "override_port": 53
     }
@@ -82,8 +101,13 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "u0",
-        "u1"
+        
+        "u1",
+        "u2",
+        "u3",
+        "u4",
+        "u5",
+        "u6"
       ],
       "default": "auto"
     },
@@ -91,46 +115,153 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "u0",
-        "u1"
+        
+        "u1",
+        "u2",
+        "u3",
+        "u4",
+        "u5",
+        "u6"
       ],
       "url": "http://cp.cloudflare.com/",
-      "interval": "10m0s"
+      "interval": "10m0s",
+      "idle_timeout": "1h40m0s"
     },
     {
       "type": "wireguard",
-      "tag": "u0",
+      "tag": "u1",
+      "reuse_addr": true,
+      "connect_timeout": "5s",
+      "tcp_fast_open": true,
+      "udp_fragment": true,
+      "fallback_delay": "300ms",
       "local_address": [
-        "172.16.0.2/32","2606:4700:110:86ed:83e4:4cb1:c7f8:2aef/128"
+        "172.16.0.2/32",
+        "2606:4700:110:8ed3:f932:3d08:f6de:34d1/128"
       ],
-      "private_key": "YLLznV1dk/DMeSkrhXmvN+bdh/XXr1UZMp5iPXLgGUg=",
-      "server": "188.114.96.185",
-      "server_port": 939,
+      "private_key": "GLo8BVmxMvhkEkoPVHbBxsdCDuaLIe46ekBTChPd9GY=",
+      "server": "ip6.ircf.space",
+      "server_port": 880,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "reserved": [
-        127,90,114
-      ],
+      "reserved": "SvFJ",
       "mtu": 1280,
-        "fake_packets": "8-15",
+      "network": "tcp",
+      "fake_packets": "8-15",
       "fake_packets_size": "40-100",
       "fake_packets_delay": "20-250"
     },
     {
       "type": "wireguard",
-      "tag": "u1",
-      "detour": "u0",
+      "tag": "u2",
+      "reuse_addr": true,
+      "connect_timeout": "5s",
+      "tcp_fast_open": true,
+      "udp_fragment": true,
+      "fallback_delay": "300ms",
       "local_address": [
-        "172.16.0.2/32","2606:4700:110:8c41:7cbc:b82d:1acd:4fd/128"
+        "172.16.0.2/32",
+        "2606:4700:110:8ed3:f932:3d08:f6de:34d1/128"
       ],
-      "private_key": "OC8byGVfFaoLeBmYy0GSmbeeT9oQdo/PvJyw69CufWU=",
-      "server": "188.114.96.200",
-      "server_port": 1701,
+      "private_key": "GLo8BVmxMvhkEkoPVHbBxsdCDuaLIe46ekBTChPd9GY=",
+      "server": "wire.ircf.space",
+      "server_port": 880,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "reserved": [
-       133,87,18
-      ],
+      "reserved": "SvFJ",
       "mtu": 1280,
-        "fake_packets": "8-15",
+      "network": "tcp",
+      "fake_packets": "8-15",
+      "fake_packets_size": "40-100",
+      "fake_packets_delay": "20-250"
+    },
+    {
+      "type": "wireguard",
+      "tag": "u3",
+      "reuse_addr": true,
+      "connect_timeout": "5s",
+      "tcp_fast_open": true,
+      "udp_fragment": true,
+      "fallback_delay": "300ms",
+      "local_address": [
+        "172.16.0.2/32",
+        "2606:4700:110:8ed3:f932:3d08:f6de:34d1/128"
+      ],
+      "private_key": "GLo8BVmxMvhkEkoPVHbBxsdCDuaLIe46ekBTChPd9GY=",
+      "server": "::ffff:a29f:c063",
+      "server_port": 880,
+      "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+      "reserved": "SvFJ",
+      "mtu": 1280,
+      "network": "tcp",
+      "fake_packets": "8-15",
+      "fake_packets_size": "40-100",
+      "fake_packets_delay": "20-250"
+    },
+    {
+      "type": "wireguard",
+      "tag": "u4",
+      "reuse_addr": true,
+      "connect_timeout": "5s",
+      "tcp_fast_open": true,
+      "udp_fragment": true,
+      "fallback_delay": "300ms",
+      "local_address": [
+        "172.16.0.2/32",
+        "2606:4700:110:8ed3:f932:3d08:f6de:34d1/128"
+      ],
+      "private_key": "GLo8BVmxMvhkEkoPVHbBxsdCDuaLIe46ekBTChPd9GY=",
+      "server": "162.159.195.133",
+      "server_port": 880,
+      "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+      "reserved": "SvFJ",
+      "mtu": 1280,
+      "network": "tcp",
+      "fake_packets": "8-15",
+      "fake_packets_size": "40-100",
+      "fake_packets_delay": "20-250"
+    },
+    {
+      "type": "wireguard",
+      "tag": "u5",
+      "reuse_addr": true,
+      "connect_timeout": "5s",
+      "tcp_fast_open": true,
+      "udp_fragment": true,
+      "fallback_delay": "300ms",
+      "local_address": [
+        "172.16.0.2/32",
+        "2606:4700:110:8ed3:f932:3d08:f6de:34d1/128"
+      ],
+      "private_key": "GLo8BVmxMvhkEkoPVHbBxsdCDuaLIe46ekBTChPd9GY=",
+      "server": "::ffff:a29f:c385",
+      "server_port": 880,
+      "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+      "reserved": "SvFJ",
+      "mtu": 1280,
+      "network": "tcp",
+      "fake_packets": "8-15",
+      "fake_packets_size": "40-100",
+      "fake_packets_delay": "20-250"
+    },
+    {
+      "type": "wireguard",
+      "tag": "u6",
+      "reuse_addr": true,
+      "connect_timeout": "5s",
+      "tcp_fast_open": true,
+      "udp_fragment": true,
+      "fallback_delay": "300ms",
+      "local_address": [
+        "172.16.0.2/32",
+        "2606:4700:110:8ed3:f932:3d08:f6de:34d1/128"
+      ],
+      "private_key": "GLo8BVmxMvhkEkoPVHbBxsdCDuaLIe46ekBTChPd9GY=",
+      "server": "zula.ir",
+      "server_port": 880,
+      "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+      "reserved": "SvFJ",
+      "mtu": 1280,
+      "network": "tcp",
+      "fake_packets": "8-15",
       "fake_packets_size": "40-100",
       "fake_packets_delay": "20-250"
     },
@@ -144,6 +275,15 @@
     },
     {
       "type": "direct",
+      "tag": "direct-fragment",
+      "tls_fragment": {
+        "enabled": true,
+        "size": "10-20",
+        "sleep": "10-20"
+      }
+    },
+    {
+      "type": "direct",
       "tag": "bypass"
     },
     {
@@ -153,10 +293,10 @@
   ],
   "route": {
     "geoip": {
-      "path": "geo-assets/sagernet-sing-geoip-geoip.db"
+      "path": "geo-assets/chocolate4u-iran-sing-box-rules-geoip.db"
     },
     "geosite": {
-      "path": "geo-assets/sagernet-sing-geosite-geosite.db"
+      "path": "geo-assets/chocolate4u-iran-sing-box-rules-geosite.db"
     },
     "rules": [
       {
@@ -186,6 +326,7 @@
         "outbound": "bypass"
       }
     ],
+    "final": "select",
     "auto_detect_interface": true,
     "override_android_vpn": true
   },
@@ -195,7 +336,8 @@
       "path": "clash.db"
     },
     "clash_api": {
-      "external_controller": "127.0.0.1:6756"
+      "external_controller": "127.0.0.1:6756",
+      "secret": "c1ovkdx10nToezWd"
     }
   }
 }
