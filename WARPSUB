@@ -8,23 +8,23 @@
     "servers": [
       {
         "tag": "dns-remote",
-        "address": "tls://8.8.8.8",
+        "address": "tls://[2620:119:35::35]",
         "address_resolver": "dns-direct"
       },
       {
         "tag": "dns-trick-direct",
-        "address": "https://sky.rethinkdns.com/",
+        "address": "tls://[2620:119:35::35]",
         "detour": "direct-fragment"
       },
       {
         "tag": "dns-direct",
-        "address": "tls://8.8.8.8",
+        "address": "tls://[2620:119:35::35]",
         "address_resolver": "dns-local",
         "detour": "direct"
       },
       {
         "tag": "dns-local",
-        "address": "local",
+        "address": "tls://[2620:119:35::35]",
         "detour": "direct"
       },
       {
@@ -96,8 +96,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "mci § 0",
-        "WIFI  § 1"
+        "MCI",
+        "WIFI"
       ],
       "default": "auto"
     },
@@ -105,8 +105,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "mci § 0",
-        "WIFI  § 1"
+        "MCI",
+        "WIFI"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "29m0s",
@@ -114,7 +114,7 @@
     },
     {
       "type": "wireguard",
-      "tag": "mci § 0",
+      "tag": "MCI",
       "local_address": [
         "172.16.0.2/24",
         "2606:4700:110:848a:1eba:1c00:aa58:dc34/128"
@@ -131,7 +131,7 @@
     },
     {
       "type": "wireguard",
-      "tag": "WIFI  § 1",
+      "tag": "WIFI",
       "local_address": [
         "172.16.0.2/24",
         "2606:4700:110:8788:15f8:b903:c1d6:793e/128"
