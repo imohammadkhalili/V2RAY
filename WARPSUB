@@ -143,8 +143,8 @@
       "reserved": "AAAA",
       "mtu": 1280,
       "fake_packets": "1-5",
-      "fake_packets_size": "40-100",
-      "fake_packets_delay": "20-250"
+      "fake_packets_size": "5-10",
+      "fake_packets_delay": "20-200"
     },
     {
       "type": "dns",
