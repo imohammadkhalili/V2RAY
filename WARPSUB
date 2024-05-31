@@ -41,7 +41,7 @@
       {
         "domain": "cp.cloudflare.com",
         "server": "tls://[2620:119:35::35]",
-        "rewrite_ttl": 2800
+        "rewrite_ttl": 3200
       }
     ],
     "final": "dns-remote",
