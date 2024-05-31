@@ -8,23 +8,23 @@
     "servers": [
       {
         "tag": "dns-remote",
-        "address": "tls://[2620:119:35::35]",
+        "address": "udp://8.8.8.8",
         "address_resolver": "dns-direct"
       },
       {
         "tag": "dns-trick-direct",
-        "address": "tls://[2620:119:35::35]",
+        "address": "udp://8.8.8.8",
         "detour": "direct-fragment"
       },
       {
         "tag": "dns-direct",
-        "address": "tls://[2620:119:35::35]",
+        "address": "udp://8.8.8.8",
         "address_resolver": "dns-local",
         "detour": "direct"
       },
       {
         "tag": "dns-local",
-        "address": "tls://[2620:119:35::35]",
+        "address": "udp://8.8.8.8",
         "detour": "direct"
       },
       {
@@ -125,9 +125,9 @@
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
       "reserved": "AAAA",
       "mtu": 1280,
-      "fake_packets": "1-5",
-      "fake_packets_size": "40-100",
-      "fake_packets_delay": "250"
+      "fake_packets": "1-10",
+      "fake_packets_size": "20-100",
+      "fake_packets_delay": "20-250"
     },
     {
       "type": "wireguard",
