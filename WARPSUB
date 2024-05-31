@@ -41,12 +41,12 @@
       {
         "domain": "cp.cloudflare.com",
         "server": "tls://[2620:119:35::35]",
-        "rewrite_ttl": 3000
+        "rewrite_ttl": 2500
       }
     ],
     "final": "dns-remote",
     "static_ips": {
-      "sky.rethinkdns.com": [
+      "tls://[2620:119:35::35]": [
         "188.114.97.6",
         "188.114.96.6",
         "2a06:98c1:3121::6",
