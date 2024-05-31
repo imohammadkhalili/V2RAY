@@ -8,24 +8,24 @@
     "servers": [
       {
         "tag": "dns-remote",
-        "address": "tls://8.8.8.8",
-        "address_resolver": "dns-direct"
+        "address": "tls://[2620:119:35::35]",
+        "address_resolver": "tls://[2620:119:35::35]"
       },
       {
         "tag": "dns-trick-direct",
-        "address": "https://sky.rethinkdns.com/",
+        "address": "tls://[2620:119:35::35]",
         "detour": "direct-fragment"
       },
       {
         "tag": "dns-direct",
-        "address": "tls://8.8.8.8",
-        "address_resolver": "dns-local",
+        "address": "tls://[2620:119:35::35]",
+        "address_resolver": "tls://[2620:119:35::35]",
         "detour": "direct"
       },
       {
         "tag": "dns-local",
-        "address": "local",
-        "detour": "direct"
+        "address": "tls://[2620:119:35::35]",
+        "detour": "tls://[2620:119:35::35]"
       },
       {
         "tag": "dns-block",
@@ -36,11 +36,11 @@
       {
         "domain_suffix": ".ir",
         "geosite": "ir",
-        "server": "dns-direct"
+        "server": "tls://[2620:119:35::35]"
       },
       {
         "domain": "cp.cloudflare.com",
-        "server": "dns-remote",
+        "server": "tls://[2620:119:35::35]",
         "rewrite_ttl": 3000
       }
     ],
