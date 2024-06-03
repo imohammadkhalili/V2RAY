@@ -8,26 +8,23 @@
     "servers": [
       {
         "tag": "dns-remote",
-        "address": "tls://[2620:119:35::35]",
-        "address_resolver": "tls://[2620:119:35::35]",
-        "strategy": "prefer_ipv6"
+        "address": "udp://8.8.8.8",
+        "address_resolver": "dns-direct"
       },
       {
         "tag": "dns-trick-direct",
-        "address": "tls://[2620:119:35::35]",
-        "strategy": "prefer_ipv6",
+        "address": "udp://8.8.8.8",
         "detour": "direct-fragment"
       },
       {
         "tag": "dns-direct",
-        "address": "tls://[2620:119:35::35]",
-        "address_resolver": "tls://[2620:119:35::35]",
-        "strategy": "prefer_ipv6",
+        "address": "udp://8.8.8.8",
+        "address_resolver": "dns-local",
         "detour": "direct"
       },
       {
         "tag": "dns-local",
-        "address": "tls://[2620:119:35::35]",
+        "address": "udp://8.8.8.8",
         "detour": "direct"
       },
       {
@@ -37,31 +34,27 @@
     ],
     "rules": [
       {
-        "domain": "tls://[2620:119:35::35]",
-        "server": "tls://[2620:119:35::35]"
-      },
-      {
         "domain_suffix": ".ir",
         "geosite": "ir",
-        "server": "tls://[2620:119:35::35]"
+        "server": "dns-direct"
       },
       {
         "domain": "cp.cloudflare.com",
         "server": "dns-remote",
-        "rewrite_ttl": 2800
+        "rewrite_ttl": 2500
       }
     ],
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "2a06:98c1:3120::3",
-        "2a06:98c1:3121::3",
-        "188.114.97.6",
-        "188.114.96.6",
-        "104.18.202.232",
-        "104.18.203.232",
         "2a06:98c1:3120::6",
         "2a06:98c1:3121::6",
+        "188.114.96.3",
+        "188.114.97.3",
+        "104.18.203.232",
+        "104.18.202.232",
+        "2a06:98c1:3120::3",
+        "2a06:98c1:3121::3",
         "188.114.96.3",
         "188.114.97.3"
       ]
@@ -103,7 +96,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "MCI"
+        "MCI",
+        "WIFI"
       ],
       "default": "auto"
     },
@@ -111,28 +105,46 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "MCI"
+        "MCI",
+        "WIFI"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "29m0s",
-      "idle_timeout": "4h50m0s"
+      "idle_timeout": "5h0m0s"
     },
     {
       "type": "wireguard",
       "tag": "MCI",
       "local_address": [
         "172.16.0.2/24",
-        "2606:4700:110:8617:cf45:787c:ef11:e618/128"
+        "2606:4700:110:848a:1eba:1c00:aa58:dc34/128"
       ],
-      "private_key": "KAkrEyUS6bCU5KtJkfkVUx3uoliQuNmqEQov0clXT0M=",
-      "server": "2606:4700:d0::26e3:84a2:8d5e:5f70",
-      "server_port": 3476,
+      "private_key": "YNXeCUDT43iVsLskUolRPHcAWAA05nXQufBDoOsSz1c=",
+      "server": "2606:4700:d1::6911:4c9d:34e:4d2a",
+      "server_port": 880,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
       "reserved": "AAAA",
       "mtu": 1280,
-      "fake_packets": "5-10",
+      "fake_packets": "1-10",
       "fake_packets_size": "20-100",
-      "fake_packets_delay": "20-200"
+      "fake_packets_delay": "20-250"
+    },
+    {
+      "type": "wireguard",
+      "tag": "WIFI",
+      "local_address": [
+        "172.16.0.2/24",
+        "2606:4700:110:8788:15f8:b903:c1d6:793e/128"
+      ],
+      "private_key": "qDkSeZm8R6i8n1cMTpku5oUivQtXRtJV5uyauAr5H2I=",
+      "server": "162.159.192.170",
+      "server_port": 2371,
+      "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+      "reserved": "AAAA",
+      "mtu": 1280,
+      "fake_packets": "1-5",
+      "fake_packets_size": "40-100",
+      "fake_packets_delay": "20-250"
     },
     {
       "type": "dns",
@@ -202,7 +214,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "9kfnerJcElWGtlR8"
+      "secret": "bTo3kxCU-hyRk9sz"
     }
   }
 }
