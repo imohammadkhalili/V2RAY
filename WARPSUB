@@ -50,14 +50,14 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "188.114.97.3",
         "188.114.96.3",
+        "188.114.97.3",
         "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
-        "104.18.203.232",
         "104.18.202.232",
-        "188.114.97.3",
+        "104.18.203.232",
         "188.114.96.3",
+        "188.114.97.3",
         "2a06:98c1:3121::3",
         "2a06:98c1:3120::3"
       ]
@@ -98,8 +98,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "National",
-        "WoW"
+        "IR",
+        "DE"
       ],
       "default": "auto"
     },
@@ -107,8 +107,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "National",
-        "WoW"
+        "IR",
+        "DE"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "29m0s",
@@ -116,14 +116,14 @@
     },
     {
       "type": "wireguard",
-      "tag": "National",
+      "tag": "IR",
       "local_address": [
         "172.16.0.2/24",
         "2606:4700:110:821c:c9b0:6135:1efb:1d4e/128"
       ],
       "private_key": "cBBzh36Nl9N3TbDpoAACLAyYHqk0ki8G+2lxfCvwylg=",
-      "server": "162.159.195.247",
-      "server_port": 2371,
+      "server": "188.114.97.167",
+      "server_port": 942,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
       "reserved": "xcP9",
       "mtu": 1330,
@@ -133,15 +133,15 @@
     },
     {
       "type": "wireguard",
-      "tag": "WoW",
-      "detour": "National",
+      "tag": "DE",
+      "detour": "IR",
       "local_address": [
         "172.16.0.2/24",
         "2606:4700:110:898f:df7a:167b:425f:4916/128"
       ],
       "private_key": "kKEJ60YzuMjKYCOP7v1ZfGBL/yxufOVNaKDB+IdfW2s=",
       "server": "162.159.192.1",
-      "server_port": 1074,
+      "server_port": 3581,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
       "reserved": "AS8H",
       "mtu": 1280
@@ -214,7 +214,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "6iSCVd5Bvy7dlYhh"
+      "secret": "faiwUZx68RBy8U2q"
     }
   }
 }
