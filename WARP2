@@ -1,4 +1,2 @@
-warp://[2606:4700:d1::6911:4c9d:34e:4d2a]:0/?ifp=1-5#ir-mci
-&&detour://162.159.192.170:2371/?ifp=1-5#de-mci
-warp://188.114.97.2:0/?ifp=1-5#ir-wifi
-&&detour://188.114.97.2:0/?ifp=1-5#de-wifi
+warp://[2606:4700:d1::6911:4c9d:34e:4d2a]:0/?ifp=1-5#ir-mci&&detour://162.159.192.170:2371/?ifp=1-5#de-mci
+warp://188.114.97.2:0/?ifp=1-5#ir-wifi&&detour://188.114.97.2:0/?ifp=1-5#de-wifi
