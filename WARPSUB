@@ -8,7 +8,7 @@
     "servers": [
       {
         "tag": "dns-remote",
-        "address": "tcp://8.8.8.8",
+        "address": "1.1.1.1",
         "address_resolver": "dns-direct"
       },
       {
@@ -18,7 +18,7 @@
       },
       {
         "tag": "dns-direct",
-        "address": "8.8.8.8",
+        "address": "1.1.1.1",
         "address_resolver": "dns-local",
         "detour": "direct"
       },
@@ -49,13 +49,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "d0::11",
+        "188.114.97.3",
+        "188.114.96.3",
+        "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3",
         "104.17.148.22",
         "104.17.147.22",
-        "188.114.96.11",
-        "188.114.97.11",
-        "2a06:98c1:3120::b",
-        "2a06:98c1:3121::b"
+        "188.114.97.3",
+        "188.114.96.3",
+        "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3"
       ]
     },
     "independent_cache": true
@@ -68,7 +71,6 @@
       "inet4_address": "172.19.0.1/28",
       "inet6_address": "fdfe:dcba:9876::1/126",
       "auto_route": true,
-      "strict_route": true,
       "endpoint_independent_nat": true,
       "stack": "mixed",
       "sniff": true,
@@ -97,8 +99,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "WARP § 0",
-        "WARP § 1"
+        "ir6 § 0",
+        "de6 § 1",
+        "ir4 § 2",
+        "de4 § 3"
       ],
       "default": "auto"
     },
@@ -106,8 +110,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "WARP § 0",
-        "WARP § 1"
+        "ir6 § 0",
+        "de6 § 1",
+        "ir4 § 2",
+        "de4 § 3"
       ],
       "url": "http://connectivitycheck.gstatic.com/generate_204",
       "interval": "10m0s",
@@ -115,16 +121,16 @@
     },
     {
       "type": "wireguard",
-      "tag": "WARP § 0",
+      "tag": "ir6 § 0",
       "local_address": [
         "172.16.0.2/24",
-        "2606:4700:110:82ac:9cec:9021:805f:54d4/128"
+        "2606:4700:110:8e2c:de46:5ea2:3902:e185/128"
       ],
-      "private_key": "YCbREzb661N5go8gDIWSWgfIg6XNU5CXIlLbiWd0ZFg=",
-      "server": "188.114.97.2",
-      "server_port": 1002,
+      "private_key": "aFjBc+OON8+ScpytCb4m0qVgi91Eh45uO2wS44kttVU=",
+      "server": "2606:4700:d1::6911:4c9d:34e:4d2a",
+      "server_port": 859,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "reserved": "3wO/",
+      "reserved": "sMRo",
       "mtu": 1330,
       "fake_packets": "1-3",
       "fake_packets_size": "10-30",
@@ -132,17 +138,49 @@
     },
     {
       "type": "wireguard",
-      "tag": "WARP § 1",
-      "detour": "WARP § 0",
+      "tag": "de6 § 1",
+      "detour": "ir6 § 0",
       "local_address": [
         "172.16.0.2/24",
-        "2606:4700:110:8d5f:9bf5:d97d:8d97:7ccc/128"
+        "2606:4700:110:8380:be2c:337c:92f9:2169/128"
       ],
-      "private_key": "cB7XpphiRPIviC/p6fBu9kIsTjxE3xx8aAPRlfn5SGc=",
-      "server": "188.114.97.2",
-      "server_port": 1070,
+      "private_key": "SMIr4m/P57gUQkk4haMKD3S0TtED/d+fXbsg6FMrzXE=",
+      "server": "2606:4700:d1::6911:4c9d:34e:4d2a",
+      "server_port": 946,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "reserved": "piuS",
+      "reserved": "APwB",
+      "mtu": 1280
+    },
+    {
+      "type": "wireguard",
+      "tag": "ir4 § 2",
+      "local_address": [
+        "172.16.0.2/24",
+        "2606:4700:110:869e:c8fc:3bd8:f089:4331/128"
+      ],
+      "private_key": "oNlQpHUd6d1x/z6FrPsvssQjWiVNuXxvx03olVRrfX8=",
+      "server": "188.114.98.220",
+      "server_port": 987,
+      "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+      "reserved": "bABH",
+      "mtu": 1330,
+      "fake_packets": "1-3",
+      "fake_packets_size": "10-30",
+      "fake_packets_delay": "10-30"
+    },
+    {
+      "type": "wireguard",
+      "tag": "de4 § 3",
+      "detour": "ir4 § 2",
+      "local_address": [
+        "172.16.0.2/24",
+        "2606:4700:110:841b:f5a7:46b2:509d:952/128"
+      ],
+      "private_key": "OKpOHZQvYRdpMwvZCkUfYqPePcYS1oPix0pmaScC3WY=",
+      "server": "188.114.97.2",
+      "server_port": 987,
+      "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+      "reserved": "1N8k",
       "mtu": 1280
     },
     {
@@ -277,7 +315,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "q9bbcgZYNW_VwEEF"
+      "secret": "UMrjuiVWTYVSc5xG"
     }
   }
 }
