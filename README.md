@@ -3,5 +3,8 @@
 ✅ Daily update
 ✅ Optimized for Iranians
 
-Sub link:
+V2ray Sub link:
 https://raw.githubusercontent.com/imohammadkhalili/V2RAY/main/Mkhalili
+
+WARP sublink:
+https://raw.githubusercontent.com/imohammadkhalili/V2RAY/main/WARPSUB
