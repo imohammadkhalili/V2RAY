@@ -8,18 +8,21 @@
     "servers": [
       {
         "tag": "dns-remote",
-        "address": "1.1.1.1",
-        "address_resolver": "dns-direct"
+        "address": "tcp://8.8.8.8",
+        "address_resolver": "dns-direct",
+        "strategy": "ipv4_only"
       },
       {
         "tag": "dns-trick-direct",
         "address": "https://sky.rethinkdns.com/",
+        "strategy": "ipv4_only",
         "detour": "direct-fragment"
       },
       {
         "tag": "dns-direct",
-        "address": "1.1.1.1",
+        "address": "9.9.9.9",
         "address_resolver": "dns-local",
+        "strategy": "ipv4_only",
         "detour": "direct"
       },
       {
@@ -49,16 +52,10 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "188.114.97.3",
-        "188.114.96.3",
-        "2a06:98c1:3121::3",
-        "2a06:98c1:3120::3",
         "104.17.148.22",
         "104.17.147.22",
-        "188.114.97.3",
-        "188.114.96.3",
-        "2a06:98c1:3121::3",
-        "2a06:98c1:3120::3"
+        "188.114.96.1",
+        "188.114.97.1"
       ]
     },
     "independent_cache": true
@@ -69,28 +66,26 @@
       "tag": "tun-in",
       "mtu": 9000,
       "inet4_address": "172.19.0.1/28",
-      "inet6_address": "fdfe:dcba:9876::1/126",
       "auto_route": true,
+      "strict_route": true,
       "endpoint_independent_nat": true,
       "stack": "mixed",
       "sniff": true,
-      "sniff_override_destination": true,
-      "domain_strategy": "prefer_ipv4"
+      "sniff_override_destination": true
     },
     {
       "type": "mixed",
       "tag": "mixed-in",
       "listen": "127.0.0.1",
-      "listen_port": 2334,
+      "listen_port": 12334,
       "sniff": true,
-      "sniff_override_destination": true,
-      "domain_strategy": "prefer_ipv4"
+      "sniff_override_destination": true
     },
     {
       "type": "direct",
       "tag": "dns-in",
       "listen": "127.0.0.1",
-      "listen_port": 6450
+      "listen_port": 16450
     }
   ],
   "outbounds": [
@@ -99,10 +94,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "ir6 § 0",
-        "de6 § 1",
-        "ir4 § 2",
-        "de4 § 3"
+        "IPV4_National § 0",
+        "IPV4_DE § 1",
+        "IPV6_National § 2",
+        "IPV6_DE § 3"
       ],
       "default": "auto"
     },
@@ -110,10 +105,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "ir6 § 0",
-        "de6 § 1",
-        "ir4 § 2",
-        "de4 § 3"
+        "IPV4_National § 0",
+        "IPV4_DE § 1",
+        "IPV6_National § 2",
+        "IPV6_DE § 3"
       ],
       "url": "http://connectivitycheck.gstatic.com/generate_204",
       "interval": "10m0s",
@@ -121,16 +116,16 @@
     },
     {
       "type": "wireguard",
-      "tag": "ir6 § 0",
+      "tag": "IPV4_National § 0",
       "local_address": [
         "172.16.0.2/24",
-        "2606:4700:110:8e2c:de46:5ea2:3902:e185/128"
+        "2606:4700:110:855d:5519:5780:55d5:4bff/128"
       ],
-      "private_key": "aFjBc+OON8+ScpytCb4m0qVgi91Eh45uO2wS44kttVU=",
-      "server": "2606:4700:d1::6911:4c9d:34e:4d2a",
-      "server_port": 859,
+      "private_key": "eCO4e0J2nUsOOZ5gTFqL28/Wf8MuJhfpETz2V09lbXE=",
+      "server": "188.114.96.90",
+      "server_port": 1014,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "reserved": "sMRo",
+      "reserved": "swHM",
       "mtu": 1330,
       "fake_packets": "1-3",
       "fake_packets_size": "10-30",
@@ -138,31 +133,31 @@
     },
     {
       "type": "wireguard",
-      "tag": "de6 § 1",
-      "detour": "ir6 § 0",
+      "tag": "IPV4_DE § 1",
+      "detour": "IPV4_National § 0",
       "local_address": [
         "172.16.0.2/24",
-        "2606:4700:110:8380:be2c:337c:92f9:2169/128"
+        "2606:4700:110:89fe:3896:da12:702d:e230/128"
       ],
-      "private_key": "SMIr4m/P57gUQkk4haMKD3S0TtED/d+fXbsg6FMrzXE=",
-      "server": "2606:4700:d1::6911:4c9d:34e:4d2a",
-      "server_port": 946,
+      "private_key": "IN5OVy/SI2CEX5jF0D73dx8V0IE0c7p/yv9dEiFUQVw=",
+      "server": "162.159.192.1",
+      "server_port": 1010,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "reserved": "APwB",
+      "reserved": "PZx1",
       "mtu": 1280
     },
     {
       "type": "wireguard",
-      "tag": "ir4 § 2",
+      "tag": "IPV6_National § 2",
       "local_address": [
         "172.16.0.2/24",
-        "2606:4700:110:869e:c8fc:3bd8:f089:4331/128"
+        "2606:4700:110:855d:5519:5780:55d5:4bff/128"
       ],
-      "private_key": "oNlQpHUd6d1x/z6FrPsvssQjWiVNuXxvx03olVRrfX8=",
-      "server": "188.114.98.220",
-      "server_port": 987,
+      "private_key": "eCO4e0J2nUsOOZ5gTFqL28/Wf8MuJhfpETz2V09lbXE=",
+      "server": "2606:4700:d1::410b:a9a3:fe0c:5636",
+      "server_port": 8854,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "reserved": "bABH",
+      "reserved": "swHM",
       "mtu": 1330,
       "fake_packets": "1-3",
       "fake_packets_size": "10-30",
@@ -170,17 +165,17 @@
     },
     {
       "type": "wireguard",
-      "tag": "de4 § 3",
-      "detour": "ir4 § 2",
+      "tag": "IPV6_DE § 3",
+      "detour": "IPV6_National § 2",
       "local_address": [
         "172.16.0.2/24",
-        "2606:4700:110:841b:f5a7:46b2:509d:952/128"
+        "2606:4700:110:89fe:3896:da12:702d:e230/128"
       ],
-      "private_key": "OKpOHZQvYRdpMwvZCkUfYqPePcYS1oPix0pmaScC3WY=",
-      "server": "188.114.97.2",
-      "server_port": 987,
+      "private_key": "IN5OVy/SI2CEX5jF0D73dx8V0IE0c7p/yv9dEiFUQVw=",
+      "server": "162.159.192.1",
+      "server_port": 7156,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "reserved": "1N8k",
+      "reserved": "PZx1",
       "mtu": 1280
     },
     {
@@ -196,7 +191,7 @@
       "tag": "direct-fragment",
       "tls_fragment": {
         "enabled": true,
-        "size": "10-30",
+        "size": "10-40",
         "sleep": "2-8"
       }
     },
@@ -211,17 +206,6 @@
   ],
   "route": {
     "rules": [
-      {
-        "rule_set": [
-          "geosite-ads",
-          "geosite-malware",
-          "geosite-phishing",
-          "geosite-cryptominers",
-          "geoip-malware",
-          "geoip-phishing"
-        ],
-        "outbound": "block"
-      },
       {
         "rule_set": [
           "geoip-ir",
@@ -260,48 +244,6 @@
         "format": "binary",
         "url": "https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/country/geosite-ir.srs",
         "update_interval": "120h0m0s"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-ads",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/block/geosite-category-ads-all.srs",
-        "update_interval": "120h0m0s"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-malware",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/block/geosite-malware.srs",
-        "update_interval": "120h0m0s"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-phishing",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/block/geosite-phishing.srs",
-        "update_interval": "120h0m0s"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-cryptominers",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/block/geosite-cryptominers.srs",
-        "update_interval": "120h0m0s"
-      },
-      {
-        "type": "remote",
-        "tag": "geoip-phishing",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/block/geoip-phishing.srs",
-        "update_interval": "120h0m0s"
-      },
-      {
-        "type": "remote",
-        "tag": "geoip-malware",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/block/geoip-malware.srs",
-        "update_interval": "120h0m0s"
       }
     ],
     "final": "select",
@@ -314,8 +256,8 @@
       "path": "clash.db"
     },
     "clash_api": {
-      "external_controller": "127.0.0.1:6756",
-      "secret": "UMrjuiVWTYVSc5xG"
+      "external_controller": "127.0.0.1:16756",
+      "secret": "K3OM7AVfWNVWLcd4"
     }
   }
 }
