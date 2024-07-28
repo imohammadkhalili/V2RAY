@@ -1,2 +1,2 @@
 warp://p1@auto4?ifp=20-40&ifps=20-50&ifpd=2-8&ifpm=m2#ADSL🇮🇷&&detour=warp://p2@auto4?ifp=20-40&ifps=20-50&ifpd=2-8&ifpm=m2#ADSL🇩🇪
-warp://p1@auto6?ifp=20-40&ifps=50-100&ifpd=2-8&ifpm=m4#MCI🇮🇷&&detour=warp://p2@auto6?ifp=20-80&ifps=50-100&ifpd=2-8&ifpm=m4#MCI🇩🇪
+warp://p1@auto6?ifp=40-80&ifps=50-100&ifpd=2-8&ifpm=m4#MCI🇮🇷&&detour=warp://p2@auto6?ifp=20-80&ifps=50-100&ifpd=2-8&ifpm=m4#MCI🇩🇪
