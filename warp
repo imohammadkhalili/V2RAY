@@ -107,10 +107,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "ADSL🇮🇷 § 0",
-        "ADSL🇩🇪 § 1",
-        "MCI🇮🇷 § 2",
-        "MCI🇩🇪 § 3"
+        "ADSL🇮🇷",
+        "ADSL🇩🇪",
+        "MCI🇮🇷",
+        "MCI🇩🇪"
       ],
       "default": "auto"
     },
@@ -118,10 +118,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "ADSL🇮🇷 § 0",
-        "ADSL🇩🇪 § 1",
-        "MCI🇮🇷 § 2",
-        "MCI🇩🇪 § 3"
+        "ADSL🇮🇷",
+        "ADSL🇩🇪",
+        "MCI🇮🇷",
+        "MCI🇩🇪"
       ],
       "url": "http://connectivitycheck.gstatic.com/generate_204",
       "interval": "10m0s",
@@ -129,7 +129,7 @@
     },
     {
       "type": "wireguard",
-      "tag": "ADSL🇮🇷 § 0",
+      "tag": "ADSL🇮🇷",
       "local_address": [
         "172.16.0.2/24",
         "2606:4700:110:855d:5519:5780:55d5:4bff/128"
@@ -147,8 +147,8 @@
     },
     {
       "type": "wireguard",
-      "tag": "ADSL🇩🇪 § 1",
-      "detour": "ADSL🇮🇷 § 0",
+      "tag": "ADSL",
+      "detour": "ADSL🇮🇷",
       "local_address": [
         "172.16.0.2/24",
         "2606:4700:110:89fe:3896:da12:702d:e230/128"
@@ -163,7 +163,7 @@
     },
     {
       "type": "wireguard",
-      "tag": "MCI🇮🇷 § 2",
+      "tag": "MCI🇮🇷",
       "local_address": [
         "172.16.0.2/24",
         "2606:4700:110:855d:5519:5780:55d5:4bff/128"
@@ -181,8 +181,8 @@
     },
     {
       "type": "wireguard",
-      "tag": "MCI🇩🇪 § 3",
-      "detour": "MCI🇮🇷 § 2",
+      "tag": "MCI🇩🇪",
+      "detour": "MCI🇮🇷",
       "local_address": [
         "172.16.0.2/24",
         "2606:4700:110:89fe:3896:da12:702d:e230/128"
