@@ -1,13 +1,1 @@
-trojan://auto@172.67.181.209:443?type=ws&sni=amorimx.pages.dev&path=/amorimx.pages.dev/&host=amorimx.pages.dev#%F0%9F%8E%AB%20Gozar%201
-trojan://auto@172.67.49.134:443?type=ws&sni=amorimx.pages.dev&path=/amorimx.pages.dev/&host=amorimx.pages.dev#%F0%9F%8E%AB%20Gozar%202
-trojan://auto@172.67.120.0:443?type=ws&sni=amorimx.pages.dev&path=/amorimx.pages.dev/&host=amorimx.pages.dev#%F0%9F%8E%AB%20Gozar%203
-trojan://auto@172.67.243.218:443?type=ws&sni=amorimx.pages.dev&path=/amorimx.pages.dev/&host=amorimx.pages.dev#%F0%9F%8E%AB%20Gozar%204
-trojan://auto@172.67.79.211:443?type=ws&sni=amorimx.pages.dev&path=/amorimx.pages.dev/&host=amorimx.pages.dev#%F0%9F%8E%AB%20Gozar%205
-trojan://auto@162.159.36.104:443?type=ws&sni=amorimx.pages.dev&path=/amorimx.pages.dev/&host=amorimx.pages.dev#%F0%9F%8E%AB%20Gozar%206
-trojan://auto@104.17.142.12:443?type=ws&sni=amorimx.pages.dev&path=/amorimx.pages.dev/&host=amorimx.pages.dev#%F0%9F%8E%AB%20Gozar%207
-trojan://auto@104.17.68.85:443?type=ws&sni=amorimx.pages.dev&path=/amorimx.pages.dev/&host=amorimx.pages.dev#%F0%9F%8E%AB%20Gozar%208
-trojan://auto@162.159.133.85:443?type=ws&sni=amorimx.pages.dev&path=/amorimx.pages.dev/&host=amorimx.pages.dev#%F0%9F%8E%AB%20Gozar%209
-trojan://auto@172.67.106.26:443?type=ws&sni=amorimx.pages.dev&path=/amorimx.pages.dev/&host=amorimx.pages.dev#%F0%9F%8E%AB%20Gozar%2010
-trojan://auto@172.67.110.232:443?type=ws&sni=amorimx.pages.dev&path=/amorimx.pages.dev/&host=amorimx.pages.dev#%F0%9F%8E%AB%20Gozar%2011
-trojan://auto@172.67.95.24:443?type=ws&sni=amorimx.pages.dev&path=/amorimx.pages.dev/&host=amorimx.pages.dev#%F0%9F%8E%AB%20Gozar%2012
-trojan://auto@172.64.201.25:443?type=ws&sni=amorimx.pages.dev&path=/amorimx.pages.dev/&host=amorimx.pages.dev#%F0%9F%8E%AB%20Gozar%2013
+vless://8905b89d-4242-405f-97b6-989a5cee8b24@www.gov.se:443/?type=ws&encryption=none&flow=&host=gzr.sonicsony.workers.dev&path=%2F%3Fed%3D2560&security=tls&sni=gzr.sonicsony.workers.dev&fp=randomized#%F0%9F%94%A5%20GOZAR
