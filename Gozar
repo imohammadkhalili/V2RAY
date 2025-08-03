@@ -48,15 +48,96 @@
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
       ],
+      "iran.shatak.top": "5.75.204.2",
       "www.speedtest.net": [
         "104.17.147.22",
         "104.17.148.22"
       ],
       "ipw.gfdv54cvghhgfhgj-njhgj64.info": "104.19.144.33",
-      "iran.shatak.top": "5.75.204.2",
+      "amazon-20.cristiano.name.ng": "34.220.119.1",
+      "DeEp-RAdIo.SEOtOoLSForYou.CO.UK": [
+        "172.67.68.168",
+        "104.26.13.114",
+        "104.26.12.114",
+        "2606:4700:20::681a:d72",
+        "2606:4700:20::681a:c72",
+        "2606:4700:20::ac43:44a8"
+      ],
+      "ng.grizzzlyyyy.ir": "65.109.194.11",
+      "informed-location.seotoolsforyou.co.uk": [
+        "104.26.13.114",
+        "172.67.68.168",
+        "104.26.12.114",
+        "2606:4700:20::ac43:44a8",
+        "2606:4700:20::681a:d72",
+        "2606:4700:20::681a:c72"
+      ],
+      "dedicated-development.seotoolsforyou.co.uk": [
+        "104.26.13.114",
+        "172.67.68.168",
+        "104.26.12.114",
+        "2606:4700:20::681a:c72",
+        "2606:4700:20::ac43:44a8",
+        "2606:4700:20::681a:d72"
+      ],
+      "hopeful-appointment.seotoolsforyou.co.uk": [
+        "104.26.13.114",
+        "172.67.68.168",
+        "104.26.12.114",
+        "2606:4700:20::681a:c72",
+        "2606:4700:20::ac43:44a8",
+        "2606:4700:20::681a:d72"
+      ],
+      "grumpy-building.seotoolsforyou.co.uk": [
+        "104.26.13.114",
+        "172.67.68.168",
+        "104.26.12.114",
+        "2606:4700:20::681a:d72",
+        "2606:4700:20::681a:c72",
+        "2606:4700:20::ac43:44a8"
+      ],
       "legend.zooboming.com": "65.109.210.32",
-      "amazon-20.cristiano.name.ng": "13.59.63.28",
-      "amazon-15.cristiano.name.ng": "99.79.53.215"
+      "elegant-corporation.seotoolsforyou.co.uk": [
+        "104.26.13.114",
+        "104.26.12.114",
+        "172.67.68.168",
+        "2606:4700:20::681a:d72",
+        "2606:4700:20::ac43:44a8",
+        "2606:4700:20::681a:c72"
+      ],
+      "obedient-menu.seotoolsforyou.co.uk": [
+        "172.67.68.168",
+        "104.26.12.114",
+        "104.26.13.114",
+        "2606:4700:20::ac43:44a8",
+        "2606:4700:20::681a:d72",
+        "2606:4700:20::681a:c72"
+      ],
+      "moody-lock.seotoolsforyou.co.uk": [
+        "104.26.12.114",
+        "104.26.13.114",
+        "172.67.68.168",
+        "2606:4700:20::681a:d72",
+        "2606:4700:20::ac43:44a8",
+        "2606:4700:20::681a:c72"
+      ],
+      "brainy-party.seotoolsforyou.co.uk": [
+        "104.26.12.114",
+        "172.67.68.168",
+        "104.26.13.114",
+        "2606:4700:20::681a:d72",
+        "2606:4700:20::ac43:44a8",
+        "2606:4700:20::681a:c72"
+      ],
+      "amazon-4.cristiano.name.ng": "13.221.177.222",
+      "grounded-brother.seotoolsforyou.co.uk": [
+        "188.114.99.0",
+        "188.114.98.0",
+        "2606:4700:20::681a:c72",
+        "2606:4700:20::ac43:44a8",
+        "2606:4700:20::681a:d72"
+      ],
+      "amazon-13.cristiano.name.ng": "3.96.174.20"
     },
     "servers": [
       "1.1.1.1",
@@ -137,6 +218,93 @@
       "settings": {
         "vnext": [
           {
+            "address": "185.243.49.205",
+            "port": 8444,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "ac083fa9-df9a-4722-b70d-24c17bef0516",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Host": [
+                  "speedtest.net"
+                ],
+                "Pragma": "no-cache",
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
+                ]
+              },
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "version": "1.1"
+            },
+            "type": "http"
+          }
+        }
+      },
+      "tag": "proxy-1"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "iran.shatak.top",
+            "port": 11344,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "49a7f5d2-026e-4c17-8386-b3e073473a13",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-2"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "www.speedtest.net",
             "port": 8443,
             "users": [
@@ -158,17 +326,17 @@
         "tlsSettings": {
           "allowInsecure": false,
           "fingerprint": "random",
-          "serverName": "hetzner-2.access.name.ng",
+          "serverName": "hetzner-4.access.name.ng",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "hetzner-2.access.name.ng"
+            "Host": "hetzner-4.access.name.ng"
           },
           "path": "/"
         }
       },
-      "tag": "proxy-1"
+      "tag": "proxy-3"
     },
     {
       "mux": {
@@ -199,18 +367,17 @@
         },
         "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "serverName": "smart.gheichi.org",
+          "serverName": "6VuEzZvXi8.GiTi3.OrG",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "smart.gheichi.org"
+            "Host": "6VuEzZvXi8.GiTi3.OrG"
           },
           "path": "/"
         }
       },
-      "tag": "proxy-2"
+      "tag": "proxy-4"
     },
     {
       "mux": {
@@ -252,7 +419,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-3"
+      "tag": "proxy-5"
     },
     {
       "mux": {
@@ -263,12 +430,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "iran.shatak.top",
-            "port": 11344,
+            "address": "www.speedtest.net",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "id": "49a7f5d2-026e-4c17-8386-b3e073473a13",
+                "id": "ccbe6b7c-9264-40c4-8bc1-ef8f6205d7a4",
                 "level": 8
               }
             ]
@@ -276,17 +443,25 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
+        "security": "tls",
         "sockopt": {
           "domainStrategy": "UseIPv4v6"
         },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "random",
+          "serverName": "hetzner-2.access.name.ng",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "hetzner-2.access.name.ng"
+          },
+          "path": "/"
         }
       },
-      "tag": "proxy-4"
+      "tag": "proxy-6"
     },
     {
       "mux": {
@@ -297,12 +472,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "legend.zooboming.com",
+            "address": "ipw.gfdv54cvghhgfhgj-njhgj64.info",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "ItsLegendaryking",
+                "id": "e999db7a-1b17-4da6-bc37-c9fa24af2e93",
                 "level": 8
               }
             ]
@@ -310,27 +485,25 @@
         ]
       },
       "streamSettings": {
-        "grpcSettings": {
-          "authority": "",
-          "health_check_timeout": 20,
-          "idle_timeout": 60,
-          "multiMode": false,
-          "serviceName": "telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers"
-        },
-        "network": "grpc",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "LCVVYDZ83B9czmb9NhpJ3sKyAXV8BBUYpS6Xv_5W3zs",
-          "serverName": "tgju.org",
-          "show": false
-        },
-        "security": "reality",
+        "network": "ws",
+        "security": "tls",
         "sockopt": {
           "domainStrategy": "UseIPv4v6"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "serverName": "smart.gheichi.org",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "smart.gheichi.org"
+          },
+          "path": "/"
         }
       },
-      "tag": "proxy-5"
+      "tag": "proxy-7"
     },
     {
       "mux": {
@@ -370,94 +543,6 @@
             "Host": "lease-20.access.name.ng"
           },
           "path": "/"
-        }
-      },
-      "tag": "proxy-6"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "amazon-20.cristiano.name.ng",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "4c26ebc3-7784-46d8-b52a-7b0ccae6f4b4",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "TGlPtfVzGIVpMauPRMGJj2Uu6GUiCpu5ZizIIjw-wx4",
-          "serverName": "store.steampowered.com",
-          "shortId": "f5",
-          "show": false
-        },
-        "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-7"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "amazon-20.cristiano.name.ng",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "4c26ebc3-7784-46d8-b52a-7b0ccae6f4b4",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "TGlPtfVzGIVpMauPRMGJj2Uu6GUiCpu5ZizIIjw-wx4",
-          "serverName": "store.steampowered.com",
-          "shortId": "f5",
-          "show": false
-        },
-        "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
         }
       },
       "tag": "proxy-8"
@@ -515,266 +600,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "ipw.gfdv54cvghhgfhgj-njhgj64.info",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e999db7a-1b17-4da6-bc37-c9fa24af2e93",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "6VuEzZvXi8.GiTi3.OrG",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "6VuEzZvXi8.GiTi3.OrG"
-          },
-          "path": "/"
-        }
-      },
-      "tag": "proxy-10"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "amazon-15.cristiano.name.ng",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "4c26ebc3-7784-46d8-b52a-7b0ccae6f4b4",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "TGlPtfVzGIVpMauPRMGJj2Uu6GUiCpu5ZizIIjw-wx4",
-          "serverName": "store.steampowered.com",
-          "shortId": "f5",
-          "show": false
-        },
-        "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-11"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "amazon-15.cristiano.name.ng",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "4c26ebc3-7784-46d8-b52a-7b0ccae6f4b4",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "TGlPtfVzGIVpMauPRMGJj2Uu6GUiCpu5ZizIIjw-wx4",
-          "serverName": "store.steampowered.com",
-          "shortId": "f5",
-          "show": false,
-          "spiderX": "/"
-        },
-        "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-12"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "amazon-15.cristiano.name.ng",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "4c26ebc3-7784-46d8-b52a-7b0ccae6f4b4",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "TGlPtfVzGIVpMauPRMGJj2Uu6GUiCpu5ZizIIjw-wx4",
-          "serverName": "store.steampowered.com",
-          "shortId": "f5",
-          "show": false,
-          "spiderX": "/"
-        },
-        "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-13"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "amazon-15.cristiano.name.ng",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "4c26ebc3-7784-46d8-b52a-7b0ccae6f4b4",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "TGlPtfVzGIVpMauPRMGJj2Uu6GUiCpu5ZizIIjw-wx4",
-          "serverName": "store.steampowered.com",
-          "shortId": "f5",
-          "show": false
-        },
-        "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-14"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "www.speedtest.net",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "ccbe6b7c-9264-40c4-8bc1-ef8f6205d7a4",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "lease-14.access.name.ng",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "lease-14.access.name.ng"
-          },
-          "path": "/"
-        }
-      },
-      "tag": "proxy-15"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "103.175.79.2",
             "port": 443,
             "users": [
@@ -804,7 +629,7 @@
           }
         }
       },
-      "tag": "proxy-16"
+      "tag": "proxy-10"
     },
     {
       "mux": {
@@ -815,12 +640,161 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.243.49.205",
-            "port": 8444,
+            "address": "104.21.67.12",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "ac083fa9-df9a-4722-b70d-24c17bef0516",
+                "id": "30f2d443-af46-4dd6-83c9-b5e17299ebd2",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "serverName": "carlotta.shoorekeeper.cloudns.org",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "carlotta.shoorekeeper.cloudns.org"
+          },
+          "path": "/?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512"
+        }
+      },
+      "tag": "proxy-11"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "85.90.207.130",
+            "port": 22523,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "5916d1b6-a379-40ea-dbdb-5db7ece2df37",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-12"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "65.109.208.107",
+            "port": 2083,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "0c2a1be7-cdde-4854-a45c-ddec52584fa1",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "authority": "",
+          "health_check_timeout": 20,
+          "idle_timeout": 60,
+          "multiMode": false,
+          "serviceName": "melov2ray"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "mDWXgatiJqUc4fmeDQqGusEBIhjFVrQ85y_ZUfNpFV8",
+          "serverName": "khamenei.ir",
+          "shortId": "54602915a7",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality"
+      },
+      "tag": "proxy-13"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "DeEp-RAdIo.SEOtOoLSForYou.CO.UK",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "5139af95-a453-46c6-831a-a532b6b51305",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/?@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn"
+        }
+      },
+      "tag": "proxy-14"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ng.grizzzlyyyy.ir",
+            "port": 8080,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "b47cac74-0fe9-4138-a8a0-0a039ae84621",
                 "level": 8
               }
             ]
@@ -829,6 +803,9 @@
       },
       "streamSettings": {
         "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
         "tcpSettings": {
           "header": {
             "request": {
@@ -837,7 +814,7 @@
                   "keep-alive"
                 ],
                 "Host": [
-                  "speedtest.net"
+                  "varzesh3.com"
                 ],
                 "Pragma": "no-cache",
                 "Accept-Encoding": [
@@ -857,7 +834,521 @@
           }
         }
       },
+      "tag": "proxy-15"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "iran.shatak.top",
+            "port": 11344,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "49a7f5d2-026e-4c17-8386-b3e073473a13",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-16"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "informed-location.seotoolsforyou.co.uk",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "5c929ec5-5b1e-447a-950c-354c5d1ba1de",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
+        }
+      },
       "tag": "proxy-17"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "57.128.198.226",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "5402dc3b-206e-4ae8-a58d-4fd27a59e142",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net"
+          },
+          "path": "/vless/"
+        }
+      },
+      "tag": "proxy-18"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dedicated-development.seotoolsforyou.co.uk",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "2054405e-70ff-40a2-ae27-16b63d72390a",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-19"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "hopeful-appointment.seotoolsforyou.co.uk",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "491e4f76-42f0-43a7-a987-25072a68d5e4",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-20"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "grumpy-building.seotoolsforyou.co.uk",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "935c990a-9bcc-484b-86a2-2a402f9ad1d4",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-21"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "legend.zooboming.com",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "ItsLegendaryking",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "authority": "",
+          "health_check_timeout": 20,
+          "idle_timeout": 60,
+          "multiMode": false,
+          "serviceName": "telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers,telegram-@LegenderY_Servers"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "LCVVYDZ83B9czmb9NhpJ3sKyAXV8BBUYpS6Xv_5W3zs",
+          "serverName": "tgju.org",
+          "show": false
+        },
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        }
+      },
+      "tag": "proxy-22"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "elegant-corporation.seotoolsforyou.co.uk",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "d03d8815-a06f-408f-a62f-6c84869b96a9",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-23"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "obedient-menu.seotoolsforyou.co.uk",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "561623c8-4983-44d3-a6ef-92b803a74ee8",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-24"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "moody-lock.seotoolsforyou.co.uk",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "82cdcdf0-e772-4d9a-b0a2-d6b605572ac1",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-25"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "brainy-party.seotoolsforyou.co.uk",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "34797f17-09a1-400c-9f4b-275718d62a0f",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-26"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "amazon-4.cristiano.name.ng",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "4c26ebc3-7784-46d8-b52a-7b0ccae6f4b4",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "TGlPtfVzGIVpMauPRMGJj2Uu6GUiCpu5ZizIIjw-wx4",
+          "serverName": "store.steampowered.com",
+          "shortId": "f5",
+          "show": false
+        },
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-27"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "grounded-brother.seotoolsforyou.co.uk",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "52adc6ba-b1c7-4541-a594-08fc698be640",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-28"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "amazon-4.cristiano.name.ng",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "4c26ebc3-7784-46d8-b52a-7b0ccae6f4b4",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "TGlPtfVzGIVpMauPRMGJj2Uu6GUiCpu5ZizIIjw-wx4",
+          "serverName": "store.steampowered.com",
+          "shortId": "f5",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-29"
     },
     {
       "mux": {
@@ -889,7 +1380,169 @@
           "path": "/vless/"
         }
       },
-      "tag": "proxy-18"
+      "tag": "proxy-30"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "amazon-13.cristiano.name.ng",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "4c26ebc3-7784-46d8-b52a-7b0ccae6f4b4",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "TGlPtfVzGIVpMauPRMGJj2Uu6GUiCpu5ZizIIjw-wx4",
+          "serverName": "store.steampowered.com",
+          "shortId": "f5",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-31"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.82.161.120",
+            "port": 19011,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "4c4a4ea9-a9ec-4d7d-d6f6-e9b21de3a8fe",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-32"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "91.99.97.62",
+            "port": 51479,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "19b32b55-1547-49db-9ef7-8ca21d580ce3",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "authority": "",
+          "health_check_timeout": 20,
+          "idle_timeout": 60,
+          "multiMode": false,
+          "serviceName": "@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "ywnxBH4IYI83aaL9k0og1Slb9CU-eEhPypH3pXD0VSg",
+          "serverName": "www.cdn77.com",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality"
+      },
+      "tag": "proxy-33"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "amazon-20.cristiano.name.ng",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "4c26ebc3-7784-46d8-b52a-7b0ccae6f4b4",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "TGlPtfVzGIVpMauPRMGJj2Uu6GUiCpu5ZizIIjw-wx4",
+          "serverName": "store.steampowered.com",
+          "shortId": "f5",
+          "show": false
+        },
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-34"
     },
     {
       "protocol": "freedom",
