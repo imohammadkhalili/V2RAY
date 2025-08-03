@@ -48,6 +48,12 @@
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
       ],
+      "direct.yasharteam.com": [
+        "87.120.205.2",
+        "87.120.205.110",
+        "87.120.205.3",
+        "87.120.205.111"
+      ],
       "x1-sweden-linode-v2-71u92.devefun.org": "172.232.139.220",
       "x1-germany-linode-v2-jk001.devefun.org": "139.162.179.106",
       "www.speedtest.net": [
@@ -55,7 +61,7 @@
         "104.17.148.22"
       ],
       "ipw.gfdv54cvghhgfhgj-njhgj64.info": "104.19.144.33",
-      "amazon-20.cristiano.name.ng": "35.178.173.7",
+      "amazon-20.cristiano.name.ng": "3.16.22.87",
       "fin01-vlr01.tcp-reset-club.net": [
         "95.164.113.4",
         "5.181.20.185"
@@ -156,6 +162,125 @@
         "concurrency": -1,
         "enabled": false
       },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "direct.yasharteam.com",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "960a51de-74cc-40af-a7f4-fe7c6710dcc8",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
+          "serverName": "tgju.org",
+          "shortId": "e54b5ad736ae4c38",
+          "show": false
+        },
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIPv6v4"
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-1"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "65.109.208.107",
+            "port": 2083,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "54b5d081-8e34-4660-ec4f-6d7fddb7feb7",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "authority": "",
+          "health_check_timeout": 20,
+          "idle_timeout": 60,
+          "multiMode": false,
+          "serviceName": "melov2ray"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "mDWXgatiJqUc4fmeDQqGusEBIhjFVrQ85y_ZUfNpFV8",
+          "serverName": "khamenei.ir",
+          "shortId": "54602915a7",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality"
+      },
+      "tag": "proxy-2"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.68.189.39",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "af552d84-cefb-4952-a814-17f284c21080",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn"
+          },
+          "path": "/vless/"
+        }
+      },
+      "tag": "proxy-3"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -185,7 +310,7 @@
           "show": false
         }
       },
-      "tag": "proxy-1"
+      "tag": "proxy-4"
     },
     {
       "mux": {
@@ -221,7 +346,7 @@
           "show": false
         }
       },
-      "tag": "proxy-2"
+      "tag": "proxy-5"
     },
     {
       "mux": {
@@ -237,7 +362,6 @@
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
                 "id": "558393ec-d70d-4a05-b412-e59f2436cc14",
                 "level": 8
               }
@@ -254,7 +378,7 @@
           "path": "/vless/"
         }
       },
-      "tag": "proxy-3"
+      "tag": "proxy-6"
     },
     {
       "mux": {
@@ -270,7 +394,6 @@
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
                 "id": "ccbe6b7c-9264-40c4-8bc1-ef8f6205d7a4",
                 "level": 8
               }
@@ -297,7 +420,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-4"
+      "tag": "proxy-7"
     },
     {
       "mux": {
@@ -313,7 +436,6 @@
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
                 "id": "a5e0c391-accd-45a7-8bb9-99ffb9b09b16",
                 "level": 8
               }
@@ -340,7 +462,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-5"
+      "tag": "proxy-8"
     },
     {
       "mux": {
@@ -384,7 +506,7 @@
           }
         }
       },
-      "tag": "proxy-6"
+      "tag": "proxy-9"
     },
     {
       "mux": {
@@ -426,7 +548,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-7"
+      "tag": "proxy-10"
     },
     {
       "mux": {
@@ -442,7 +564,6 @@
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
                 "id": "e999db7a-1b17-4da6-bc37-c9fa24af2e93",
                 "level": 8
               }
@@ -469,7 +590,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-8"
+      "tag": "proxy-11"
     },
     {
       "mux": {
@@ -513,7 +634,7 @@
           }
         }
       },
-      "tag": "proxy-9"
+      "tag": "proxy-12"
     },
     {
       "mux": {
@@ -529,7 +650,6 @@
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
                 "id": "e999db7a-1b17-4da6-bc37-c9fa24af2e93",
                 "level": 8
               }
@@ -555,7 +675,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-10"
+      "tag": "proxy-13"
     },
     {
       "mux": {
@@ -594,7 +714,7 @@
           "path": "/proxyip=zani.yaemiko.ggff.net"
         }
       },
-      "tag": "proxy-11"
+      "tag": "proxy-14"
     },
     {
       "mux": {
@@ -634,7 +754,7 @@
           }
         }
       },
-      "tag": "proxy-12"
+      "tag": "proxy-15"
     },
     {
       "protocol": "freedom",
